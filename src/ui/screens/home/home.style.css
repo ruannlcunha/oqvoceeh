@@ -1,0 +1,76 @@
+
+.home-screen {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-screen h1 {
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    transition: all 0.3s;
+    animation: fade-in 1s ease-in;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 3rem;
+    z-index: 999;
+}
+
+.home-screen .morpheus {
+    height: 30rem;
+    width: 40rem;
+    background-image: url(../../../assets/img/Morpheus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: self-end;
+    justify-content: space-between;
+    transition: all 0.3s;
+    position: absolute;
+}
+
+.home-screen .morpheus button {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-family: sans-serif;
+    transition: all 0.3s;
+    animation: fade-in 1s ease-in;
+}
+.home-screen .morpheus img {
+    height: 50%;
+}
+
+.home-screen .morpheus button:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: all 0.3s;
+    font-size: 42px;
+}
+
+
+@media screen and (orientation:portrait) {
+    .home-screen .morpheus {
+        width: 90%;
+    }
+
+    .home-screen h1 {
+        width: 80%;
+        top: 10rem;
+    }
+
+}
